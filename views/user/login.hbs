@@ -1,4 +1,4 @@
-<div class="tab-content" style="width: 30%">
+<div class="tab-content center-div" style="width: 30%">
   <div class="innerbox">
     <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
       <li class="nav-item" role="presentation">
@@ -10,8 +10,7 @@
           role="tab"
           aria-controls="pills-login"
           aria-selected="true"
-          >Login</a
-        >
+        >Login</a>
       </li>
     </ul>
 
@@ -21,29 +20,34 @@
       role="tabpanel"
       aria-labelledby="tab-login"
     >
-      <form method="get" action="submit">
+      <form action="/login" method="post" >
         <!-- Email input -->
         <div class="form-outline mb-4">
-          <input type="email" id="loginName" class="form-control" />
-          <label class="form-label" for="loginName">Email or username</label>
+          <input name="Email" type="email" id="Email" class="form-control" />
+          <label class="form-label" for="Email">Email </label>
         </div>
 
         <!-- Password input -->
         <div class="form-outline mb-4">
-          <input type="password" id="loginPassword" class="form-control" />
-          <label class="form-label" for="loginPassword">Password</label>
+          <input
+            name="Password"
+            type="password"
+            id="Password"
+            class="form-control"
+          />
+          <label class="form-label" for="Password">Password</label>
         </div>
 
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">
+        <button type="signup" class="btn btn-primary btn-block mb-4">
           Sign in
         </button>
-
-        <!-- Register buttons -->
-        <div class="text-center">
-          <p>Not a member? <a href="submit">Register</a></p>
-        </div>
+<script>console.log("hai hai ::::::::::::::")</script>
       </form>
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>Not a member? <a href="/signup">Register</a></p>
+      </div>
     </div>
   </div>
 </div>

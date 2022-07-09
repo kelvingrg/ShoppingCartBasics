@@ -10,6 +10,8 @@ var hbs=require('express-handlebars')
 var fileUpload=require('express-fileupload')
 //this is used in admin/add-products==> to add image files- need to do install express fileupload
 var db=require('./config/connection')
+var session=require('express-session')
+
 
 var app = express();
 //in below code it selects layout folderand defines its path here 
@@ -24,6 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(fileUpload());//middle ware  has set 
+app.use(session({secret:'Key',cookie:{maxAge:60000}}))
 db.connect((err)=>{
   if(err)
   console.log("connection error"+err)

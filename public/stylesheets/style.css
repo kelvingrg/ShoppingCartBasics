@@ -7,3 +7,22 @@ body {
 a {
   color: #00B7FF;
 }
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: darkgoldenrod;
+}
+
+a {
+  color: #00B7FF;
+}
+.tab-content{
+  margin-left: 20%;    margin-left: 32%;
+  margin-top: 3%;
+  background-color: rgb(220, 235, 88);
+ padding:2rem;
+ border-radius: 5%;
+}
+.innerbox{
+  
+}
